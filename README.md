@@ -21,3 +21,7 @@ Pulsed Processes Analysis in a Folded Waveguide with an Electron Beam
 * `~ git push`
 ##### 4) Quit virtual environment after the work is done:
 * `~ deactivate`
+
+## Develop with Qt Creator:
+##### 1) Compile `*.ui` to `*.py`:
+* `~ pyuic5 ${qt-src/*.ui} -o ${*.py}`

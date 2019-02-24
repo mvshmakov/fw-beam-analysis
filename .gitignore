@@ -105,3 +105,9 @@ venv.bak/
 
 # VSCode settings
 .vscode
+
+# TODO
+TODO.md
+
+#Qt debug
+build-qt-src*

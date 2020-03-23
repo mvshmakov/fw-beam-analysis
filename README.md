@@ -24,4 +24,7 @@ Pulsed Processes Analysis in a Folded Waveguide with an Electron Beam
 
 ## Develop with Qt Creator:
 ##### 1) Compile `*.ui` to `*.py`:
-* `~ pyuic5 ${qt-src/*.ui} -o ${*.py}`
+* `~ pyuic5 ${qt-src/*.ui} -o ${*.py}` (`pyuic5 qt-src/mainwindow.ui -o gui.py`)
+
+https://www.youtube.com/watch?time_continue=394&v=lq7KCo0h2PE
+генерим бинарники: https://likegeeks.com/pyqt5-tutorial/ (конец статьи)

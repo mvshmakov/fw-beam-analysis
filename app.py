@@ -1,19 +1,34 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from sys import argv, exit
 from gui import Ui_MainWindow
-from sys import argv
+
+from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtCore import pyqtSlot
 
 
-class Example(QMainWindow, Ui_MainWindow):
+class MainWindow(QMainWindow, Ui_MainWindow):
+    title = 'FW-beam interation simulator'
+
     def __init__(self):
-        super().__init__()
+        QMainWindow.__init__(self)
         self.setupUi(self)
+
+        self.simulateButton.clicked.connect(self.on_click)
+
+    @pyqtSlot()
+    def on_click(self):
+        print("clicked")
 
 
 if __name__ == '__main__':
     app = QApplication(argv)
-    form = Example()
-    form.show()
-    app.exec()
+
+    window = MainWindow()
+    window.setWindowTitle('FW-beam interation simulator')
+
+    window.show()
+    window.resize(500, 400)
+
+    exit(app.exec_())
